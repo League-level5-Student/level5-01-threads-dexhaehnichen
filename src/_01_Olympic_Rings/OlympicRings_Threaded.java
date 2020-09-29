@@ -10,8 +10,8 @@ public class OlympicRings_Threaded {
 		Robot r1 = new Robot(20, 700);
 		Robot r2 = new Robot(400, 700);
 		Robot r3 = new Robot(800, 700);
-		Robot r4 = new Robot(1200, 700);
-		Robot r5 = new Robot(1600, 700);
+		Robot r4 = new Robot(190, 900);
+		Robot r5 = new Robot(600, 900);
 
 		r1.setSpeed(10);
 		r2.setSpeed(10);
