@@ -12,7 +12,7 @@ public class ThreadPoolTest {
 
 	@Test
 	public void test() {
-		int total = 1000000;
+		int total = 100;
 		
 		ThreadPool tp = new ThreadPool(4);
 		char[] chars = new char[total];
@@ -27,11 +27,11 @@ public class ThreadPoolTest {
 			int x = i * count;
 			tp.addTask(()->{
 				for(int j = 0; j < count; j++){
-					chars[x + j] = Character.toUpperCase(chars[x + j]);
-				}
-			});
+					chars[x + j] = Character.toUpperCase(chars[x + j]); 
+						}
+					}
+					);
 		}
-
 		long start = System.currentTimeMillis();
 		
 		tp.start();

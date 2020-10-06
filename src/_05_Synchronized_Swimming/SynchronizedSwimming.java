@@ -37,6 +37,7 @@ public class SynchronizedSwimming {
 		try {
 			swimLap(swimmer);
 			Thread.sleep(100);
+			
 		} catch (InterruptedException ignore) {
 		}
 	}

@@ -13,7 +13,7 @@ public class Worker implements Runnable {
 	@Override
 	public void run() {
 		while (!taskQueue.isEmpty()) {
-			taskQueue.remove();
+			taskQueue.remove().perform();
 		}
 	}
 
